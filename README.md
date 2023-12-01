@@ -4,6 +4,7 @@
 ## Description
 
 Portfolio website which features some of my recent Github projects as well as my CV and skills.
+Visit the site: (https://portfolio-erkamkrs.vercel.app/)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -33,9 +34,6 @@ This project was built using these technologies
 - Nodemailer
 - GSAP
 
-### Contact Me
-In this section you can contact me through filling out the form, and can also download and preview my CV through the "Download CV" button.
-![alt text](https://github.com/erkamkrs/portfolio/blob/master/static/images/contact-me-section.png)
 
 ## Help
 
