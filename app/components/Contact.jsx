@@ -18,14 +18,12 @@ import {
   FormErrorMessage,
   FormLabel,
   Input,
-  InputGroup,
-  InputLeftElement,
   Textarea,
   useColorMode,
 } from '@chakra-ui/react';
-import { MdPhone, MdEmail, MdLocationOn, MdFacebook, MdOutlineEmail, MdPerson } from 'react-icons/md';
-import { BsGithub, BsDiscord } from 'react-icons/bs';
+import { MdPhone, MdEmail, MdLocationOn } from 'react-icons/md';
 import { useToast } from '@chakra-ui/react';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 const initValues = {name: "", email: "", message: ""};
 const initState = {values: initValues};
 
@@ -157,25 +155,28 @@ export default function Contact() {
                       aria-label="facebook"
                       variant="ghost"
                       size="lg"
+                      onClick={() => window.location.href='https://www.linkedin.com/in/erkam-k-219890110/'}
                       isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
-                      icon={<MdFacebook size="28px" />}
+                      _hover={{ bg: '#000000' }}
+                      icon={<FaLinkedin size="28px" />}
                     />
                     <IconButton
                       aria-label="github"
                       variant="ghost"
                       size="lg"
+                      onClick={() => window.location.href='https://github.com/erkamkrs'}
                       isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
-                      icon={<BsGithub size="28px" />}
+                      _hover={{ bg: '#000000' }}
+                      icon={<FaGithub size="28px" />}
                     />
                     <IconButton
                       aria-label="discord"
                       variant="ghost"
                       size="lg"
+                      onClick={() => window.location.href='https://twitter.com/erkamkiris'}
                       isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
-                      icon={<BsDiscord size="28px" />}
+                      _hover={{ bg: '#000000' }}
+                      icon={<FaTwitter size="28px" />}
                     />
                   </HStack>
                 </Box>

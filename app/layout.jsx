@@ -7,9 +7,6 @@ export default function RootLayout(props) {
   const { children } = props;
   return (
     <html>
-      <head>
-      <link rel="icon" href="@/public/favicon.ico" sizes="any" />
-      </head>
       <body>
         <ChakraProvider>
             <Grid

@@ -57,7 +57,7 @@ export default function Navbar() {
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
-            <Button as="a" href="./ERKAM_CV.pdf" download>
+            <Button as="a" href="./erkam_cv.pdf" download>
               <DownloadIcon /> &nbsp; Download Resume
             </Button>
               <Button onClick={toggleColorMode}>

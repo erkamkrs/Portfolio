@@ -9,6 +9,9 @@ import Contact from "./components/Contact";
 export default function Home() {
   return (
     <>
+      <head>
+      <link rel="icon" href="@/public/favicon.ico" sizes="any" />
+      </head>
       <AnimatedCursor 
         innerSize={12}
         outerSize={12}

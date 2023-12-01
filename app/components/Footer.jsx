@@ -9,11 +9,9 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
-  colorMode,
   useColorMode
 } from '@chakra-ui/react'
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { ReactNode } from 'react'
+import { FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa'
 
 
 
@@ -63,15 +61,15 @@ export default function Footer() {
         <Box>
           <Avatar size={"md"} src={logoSrc} />
           </Box>
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Text>© 2023 Made by Erkam Kiris</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
+          <SocialButton label={'Twitter'} href={'https://twitter.com/erkamkiris'}>
             <FaTwitter />
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
+          <SocialButton label={'Github'} href={'https://github.com/erkamkrs'}>
+            <FaGithub />
           </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton label={'Instagram'} href={'https://www.instagram.com/erkamkiris/'}>
             <FaInstagram />
           </SocialButton>
         </Stack>
