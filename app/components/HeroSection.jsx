@@ -109,10 +109,10 @@ return (
           position={'relative'}
           rounded={'full'}
           boxShadow={'2xl'}
-          height={{base: '400px', sm: '200px', lg: '400px'}}
-          width={{base: '600px', sm: '300px', lg: '600px'}}
+          height={{base: '200px', sm: '200px', lg: '400px'}}
+          width={{base: '300px', sm: '300px', lg: '600px'}}
           overflow={'hidden'}
-          p={{base: '8', sm: '1', lg: '10'}}
+          p={{base: '8', sm: '4', lg: '10'}}
           bg={'#E6E6DD'}
           >
           <Logo />

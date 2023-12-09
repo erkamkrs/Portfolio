@@ -25,8 +25,7 @@ import { IoLogoReact } from "react-icons/io5";
 import { SiChakraui, SiCucumber, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { FaDotCircle, FaFlask } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
-import { BsFiletypeXml } from 'react-icons/bs';
-
+import { MdJavascript } from 'react-icons/md';
 export default function AboutMe() {
   const { colorMode, toggleColorMode } = useColorMode()
 
@@ -98,7 +97,7 @@ export default function AboutMe() {
                   <ListItem>
                     <Flex align="center">
                       <IoLogoJavascript/>
-                      <Text ml={2}>JavaScript</Text>
+                      <Text ml={2}>JS</Text>
                     </Flex>
                   </ListItem>
                   <ListItem>
@@ -124,7 +123,7 @@ export default function AboutMe() {
                   <ListItem>
                     <Flex align="center">
                       <SiPostgresql />
-                      <Text ml={2}>PostgreSQL</Text>
+                      <Text ml={2}>SQL</Text>
                     </Flex>
                   </ListItem>
                 </List>
