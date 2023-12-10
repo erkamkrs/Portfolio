@@ -4,21 +4,15 @@ import {
   Box,
   Flex,
   Avatar,
-  Text,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
-  Image,
   useColorMode,
-  Center,
 } from '@chakra-ui/react'
+import { Link } from 'react-router-dom';
 import { MoonIcon, SunIcon, DownloadIcon } from '@chakra-ui/icons'
+import { FaDribbble } from 'react-icons/fa'
 
 const NavLink = (props) => {
   const { children } = props
@@ -60,11 +54,12 @@ export default function Navbar() {
             <Button as="a" href="./erkam_cv.pdf" download>
               <DownloadIcon /> &nbsp; Download Resume
             </Button>
-              <Button onClick={toggleColorMode}>
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button>
-
-            
+            <Button onClick={() => window.location.href='/basketball'}>
+              <FaDribbble /> &nbsp; View Basketball
+            </Button>
+            <Button onClick={toggleColorMode}>
+              {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+            </Button>
             </Stack>
           </Flex>
         </Flex>
