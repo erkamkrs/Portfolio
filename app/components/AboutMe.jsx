@@ -2,7 +2,6 @@
 
 import {
   Box,
-  colorMode,
   Container,
   Stack,
   Text,
@@ -15,7 +14,6 @@ import {
   StackDivider,
   useColorMode,
   useColorModeValue,
-  VisuallyHidden,
   List,
   ListItem,
 } from '@chakra-ui/react'
@@ -25,10 +23,8 @@ import { IoLogoReact } from "react-icons/io5";
 import { SiChakraui, SiCucumber, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { FaDotCircle, FaFlask } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
-import { MdJavascript } from 'react-icons/md';
 export default function AboutMe() {
   const { colorMode, toggleColorMode } = useColorMode()
-
 
   return (
     <Container maxW={'7xl'}

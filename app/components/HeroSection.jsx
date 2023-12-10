@@ -16,12 +16,12 @@ import { DownloadIcon, ChatIcon} from '@chakra-ui/icons'
 import Logo from './Logo';
 import TypingAnimation from './TypingAnimation';
 import { Link as ScrollLink } from 'react-scroll';
+import { FaDribbble } from 'react-icons/fa';
 
 
 export default function HeroSection() {
   const { colorMode, toggleColorMode } = useColorMode()
   const logoSrc = colorMode === 'light' ? './light-logo.png' : './dark-logo.png'
-  const isLargeScreen = useBreakpointValue({ base: false, md: true, lg: true });
  
   
 
@@ -60,6 +60,7 @@ return (
         fontSize={{ base: 'lg', sm: 'xl', lg: '2xl', }}
         color={'gray.500'}
         >
+        I am a backend developer who is passionate about coding and learning new technologies. I am currently working as a software engineer at <a href="https://www.trendico.es">Trendico</a> in Zaragoza, Spain.
         </Text>
         <Stack spacing={{ base: 4, sm: 6, lg: 8 }} direction={{ base: 'column', sm: 'row' }}>
         <Button
@@ -109,8 +110,8 @@ return (
           position={'relative'}
           rounded={'full'}
           boxShadow={'2xl'}
-          height={{base: '200px', sm: '200px', lg: '400px'}}
-          width={{base: '300px', sm: '300px', lg: '600px'}}
+          height={{base: '200px', md: '150px', lg: '400px'}}
+          width={{base: '300px', md: '200px', lg: '600px'}}
           overflow={'hidden'}
           p={{base: '8', sm: '4', lg: '10'}}
           bg={'#E6E6DD'}

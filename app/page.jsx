@@ -1,7 +1,7 @@
 import AboutMe from "./components/AboutMe";
 import HeroSection from "./components/HeroSection";
 import React from 'react';
-import HoverEffect from './HoverEffect';
+import HoverEffect from './components/HoverEffect';
 import AnimatedCursor from "react-animated-cursor"
 import Contact from "./components/Contact";
 

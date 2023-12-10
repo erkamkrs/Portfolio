@@ -3,7 +3,7 @@ import { useBreakpointValue } from "@chakra-ui/react";
 
 
 export default function TypingAnimation() {
-  const fontSize = useBreakpointValue({ base: '42px', md: '42px', lg: '48px' });
+  const fontSize = useBreakpointValue({ base: '32px', md: '42px', lg: '48px' });
 
   return (
     <TypeAnimation
