@@ -14,6 +14,8 @@ export default function TypingAnimation() {
         1000,
         'Back End Developer',
         1000,
+        'Basketball Player',
+        1000,
       ]}
       wrapper="span"
       speed={40}

@@ -10,7 +10,9 @@ export default function BasketballTypingAnimation() {
       sequence={[
         'Basketball Player',
         1000,
-        'Versatile Forward',
+        'All-Around Forward',
+        1000,
+        'Software Developer',
         1000,
       ]}
       wrapper="span"

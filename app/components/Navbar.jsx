@@ -37,9 +37,9 @@ export default function Navbar() {
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
-            
+
             <Button as="a" href="./erkam_cv.pdf" download>
-              <DownloadIcon /> &nbsp; Download CV
+              <DownloadIcon /> &nbsp; CV
             </Button>
 
             <NavLink href='/basketball'>

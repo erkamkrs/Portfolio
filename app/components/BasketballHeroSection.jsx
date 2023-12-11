@@ -3,14 +3,12 @@ import {
   Container,
   Stack,
   Flex,
-  Box,
   Heading,
   Text,
   Button,
-  useBreakpointValue,
   useColorMode,
 } from '@chakra-ui/react'
-import { DownloadIcon, ChatIcon} from '@chakra-ui/icons'
+import { ChatIcon} from '@chakra-ui/icons'
 import { GiNotebook } from "react-icons/gi";
 import BasketballTypingAnimation from '../components/BasketballTypingAnimation';
 import { Link as ScrollLink } from 'react-scroll';
