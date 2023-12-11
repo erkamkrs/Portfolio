@@ -60,7 +60,7 @@ return (
         fontSize={{ base: 'lg', sm: 'xl', lg: '2xl', }}
         color={'gray.500'}
         >
-        Software developer and Basketball player who is passionate about learning new technologies and basketball. 
+        Software developer and Basketball player who is passionate about learning new technologies and sports. 
         In the mornings I write code and drink coffee at <a href="https://www.trendico.es">Trendico</a>. At night I shoot hoops and get buckets for <a href="https://cbzaragoza.com/">CB Zaragoza</a>.
         </Text>
         <Stack spacing={{ base: 4, sm: 6, lg: 8 }} direction={{ base: 'column', sm: 'row' }}>

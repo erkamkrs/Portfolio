@@ -7,7 +7,7 @@ const BasketballCarousel = () => {
     
     const images = [       
         "./carousel-image-1.jpg",
-         "./dunk-video.mp4",
+        "./dunk-video.mp4",
         "./carousel-image-2.jpg",
         "./carousel-image-3.jpg",
         "./carousel-image-4.jpg",
