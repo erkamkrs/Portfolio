@@ -62,7 +62,7 @@ export default function AboutMe() {
             }>
             <VStack spacing={{ base: 4, sm: 6 }}>
               <Text fontSize={'md'}>
-             I&apos;m a dynamic and detail-oriented software developer skilled in Python, XML, SQL, JavaScript, with a specialization in the Odoo and Next JS frameworks. 
+             Dynamic and detail-oriented software developer skilled in Python, XML, SQL, JavaScript, with a specialization in the Odoo and Next JS frameworks. 
             My expertise lies in tailoring applications to meet specific company needs, particularly in logistics, ecommerce, and warehouse management.
             Driven by a passion for creating efficient solutions, I thrive in collaborative environments, working closely with cross-functional teams to analyze requirements and implement custom features.
             Meticulous about code quality, I conduct thorough reviews to ensure adherence to best practices.

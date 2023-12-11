@@ -10,33 +10,19 @@ import {
   Stack,
   useColorMode,
 } from '@chakra-ui/react'
-import { Link } from 'react-router-dom';
+import NavLink from './NavLink';
 import { MoonIcon, SunIcon, DownloadIcon } from '@chakra-ui/icons'
 import { FaDribbble } from 'react-icons/fa'
+import { FaComputer } from 'react-icons/fa6';
 
-const NavLink = (props) => {
-  const { children } = props
 
-  return (
-    <Box
-      as="a"
-      px={2}
-      py={1}
-      rounded={'md'}
-      _hover={{
-        textDecoration: 'none',
-        bg: useColorModeValue("#E6E6DD" , '#000000'),
-      }}
-      href={'#'}>
-      {children}
-    </Box>
-  )
-}
+
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode()
   const { isOpen, onOpen, onClose } = useDisclosure()
   const logoSrc = colorMode === 'light' ? './light-logo.png' : './dark-logo.png'
+
 
   return (
     <>
@@ -51,15 +37,27 @@ export default function Navbar() {
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
+            
             <Button as="a" href="./erkam_cv.pdf" download>
-              <DownloadIcon /> &nbsp; Download Resume
+              <DownloadIcon /> &nbsp; Download CV
             </Button>
-            <Button onClick={() => window.location.href='/basketball'}>
-              <FaDribbble /> &nbsp; View Basketball
-            </Button>
+
+            <NavLink href='/basketball'>
+              <Button>
+                  <FaDribbble /> 
+              </Button>
+            </NavLink>
+
+            <NavLink href='/'>
+              <Button>
+                  <FaComputer /> 
+              </Button>
+            </NavLink>
+
             <Button onClick={toggleColorMode}>
               {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
+
             </Stack>
           </Flex>
         </Flex>
