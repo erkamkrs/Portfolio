@@ -3,9 +3,11 @@ import { useState, useEffect, useRef } from "react";
 
 const BasketballCarousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const images = [
+    const [intervalTime, setIntervalTime] = useState(3000);
+    
+    const images = [       
         "./carousel-image-1.jpg",
-        "./dunk-video.mp4",
+         "./dunk-video.mp4",
         "./carousel-image-2.jpg",
         "./carousel-image-3.jpg",
         "./carousel-image-4.jpg",
@@ -17,18 +19,20 @@ const BasketballCarousel = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-        }, 8000);
+        }, intervalTime);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [intervalTime]);
 
     useEffect(() => {
         if (videoRef.current) {
             if (currentSlide === 1) {
                 videoRef.current.play();
+                setIntervalTime(8000);
             } else {
                 videoRef.current.pause();
                 videoRef.current.currentTime = 0;
+                setIntervalTime(3000);
             }
         }
     }, [currentSlide]);
