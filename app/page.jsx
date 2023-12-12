@@ -4,6 +4,7 @@ import React from 'react';
 import HoverEffect from './components/HoverEffect';
 import AnimatedCursor from "react-animated-cursor"
 import Contact from "./components/Contact";
+import RecentProject from "./components/RecentProject";
 
 
 export default function Home() {
@@ -25,6 +26,9 @@ export default function Home() {
       </HoverEffect>
       <HoverEffect>
         <AboutMe />
+      </HoverEffect>
+      <HoverEffect>
+        <RecentProject/>
       </HoverEffect>
       <HoverEffect>
         <Contact />

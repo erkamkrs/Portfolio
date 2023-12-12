@@ -44,7 +44,7 @@ export default function Navbar() {
 
             <NavLink href='/basketball'>
               <Button>
-                  <FaDribbble /> 
+                  <FaDribbble /> &nbsp; Basketball
               </Button>
             </NavLink>
 
