@@ -84,7 +84,7 @@ return (
           </Button>
           <Button
           as="a" 
-          href="./ERKAM_CV.pdf"
+          href="./erkam_cv.pdf"
           download
           rounded={'full'}
           size={'lg'}
