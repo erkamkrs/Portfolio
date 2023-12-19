@@ -1,5 +1,5 @@
 import { Box, Image, Wrap, WrapItem } from "@chakra-ui/react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const BasketballCarousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -7,14 +7,11 @@ const BasketballCarousel = () => {
     
     const images = [       
         "./carousel-image-1.jpg",
-        "./dunk-video.mp4",
         "./carousel-image-2.jpg",
         "./carousel-image-3.jpg",
         "./carousel-image-4.jpg",
         "./carousel-image-5.jpg",
     ];
-
-    const videoRef = useRef(null);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -23,19 +20,6 @@ const BasketballCarousel = () => {
 
         return () => clearInterval(interval);
     }, [intervalTime]);
-
-    useEffect(() => {
-        if (videoRef.current) {
-            if (currentSlide === 1) {
-                videoRef.current.play();
-                setIntervalTime(8000);
-            } else {
-                videoRef.current.pause();
-                videoRef.current.currentTime = 0;
-                setIntervalTime(3000);
-            }
-        }
-    }, [currentSlide]);
 
     return (
         <Box
@@ -50,28 +34,12 @@ const BasketballCarousel = () => {
             <Wrap spacing={0}>
                 {images.map((image, index) => (
                     <WrapItem key={index}>
-                        {image.endsWith(".mp4") ? (
-                            <video
-                                ref={videoRef}
-                                src={image}
-                                width={"100%"}
-                                alt={`Slide ${index + 1}`}
-                                style={{
-                                    display: index === currentSlide ? "block" : "none",
-                                    objectFit: "cover",
-                                }}
-                                autoPlay
-                                loop
-                                muted
-                            />
-                        ) : (
-                            <Image
-                                src={image}
-                                width={"100%"}
-                                alt={`Slide ${index + 1}`}
-                                display={index === currentSlide ? "block" : "none"}
-                            />
-                        )}
+                        <Image
+                            src={image}
+                            width={"100%"}
+                            alt={`Slide ${index + 1}`}
+                            display={index === currentSlide ? "block" : "none"}
+                        />
                     </WrapItem>
                 ))}
             </Wrap>
